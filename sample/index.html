@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="../vendors/jasmine/lib/jasmine-3.5.0/jasmine_favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="../vendors/jasmine/lib/jasmine-3.5.0/jasmine.css"
+    />
+    <script src="../vendors/jasmine/lib/jasmine-3.5.0/jasmine.js"></script>
+    <script src="../vendors/jasmine/lib/jasmine-3.5.0/jasmine-html.js"></script>
+    <script src="../vendors/jasmine/lib/jasmine-3.5.0/boot.js"></script>
+  </head>
+  <body>
+    <script>
+      describe('hello world', () => {
+        jasmine.getEnv().configure({ random: false });
+        it('true is true', () => {
+          expect(true).toBe(true);
+        });
+      });
+    </script>
+  </body>
+</html>
