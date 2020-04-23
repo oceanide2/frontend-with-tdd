@@ -9,6 +9,10 @@ App.ClickCountView = function (clickCounter, updateEl) {
     updateView() {
       updateEl.innerHTML = clickCounter.getValue();
     },
+    increaseAndUpdateView() {
+      clickCounter.increase();
+      this.updateView();
+    },
   };
 };
 
