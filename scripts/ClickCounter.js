@@ -6,5 +6,8 @@ App.ClickCounter = function () {
     getValue() {
       return value;
     },
+    increase() {
+      value++;
+    },
   };
 };
